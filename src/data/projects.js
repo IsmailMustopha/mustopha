@@ -240,56 +240,55 @@ export const projects = [
     },
   },
   {
-  id: 5,
-  title: "Restaurant Website (HTML, CSS & JavaScript)",
-  description:
-    "A responsive restaurant website with modern UI, interactive sections, and smooth user experience built using pure frontend technologies.",
+    id: 5,
+    title: "Restaurant Website (HTML, CSS & JavaScript)",
+    description:
+      "A responsive restaurant website with modern UI, interactive sections, and smooth user experience built using pure frontend technologies.",
 
-     images: [
+    images: [
       "/images/projects/project5.png",
       "/images/projects/project5_2.png",
       "/images/projects/project5_3.png",
       "/images/projects/project5_4.png",
     ],
-  category: "Frontend",
+    category: "Frontend",
 
-  technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript"],
 
-  metrics: "Responsive UI + interactive components",
+    metrics: "Responsive UI + interactive components",
 
-  demoUrl: "https://gilli-smoky.vercel.app",
-  githubUrl: "https://github.com/IsmailMustopha/gilli",
+    demoUrl: "https://gilli-smoky.vercel.app",
+    githubUrl: "https://github.com/IsmailMustopha/gilli",
 
-  caseStudy: {
-    overview:
-      "A modern restaurant website built using HTML, CSS, and JavaScript, designed to showcase menu items, services, and brand identity with a clean and responsive user interface.",
+    caseStudy: {
+      overview:
+        "A modern restaurant website built using HTML, CSS, and JavaScript, designed to showcase menu items, services, and brand identity with a clean and responsive user interface.",
 
-    problem:
-      "Small restaurants often lack an online presence or have outdated websites that do not provide a good user experience across devices.",
+      problem:
+        "Small restaurants often lack an online presence or have outdated websites that do not provide a good user experience across devices.",
 
-    solution:
-      "Developed a responsive and visually appealing website that highlights menu offerings, improves accessibility, and enhances user engagement through interactive UI elements.",
+      solution:
+        "Developed a responsive and visually appealing website that highlights menu offerings, improves accessibility, and enhances user engagement through interactive UI elements.",
 
-    features: [
-      "Responsive design for mobile and desktop",
-      "Interactive navigation menu",
-      "Hero section with call-to-action",
-      "Menu display section",
-      "Smooth scrolling and UI interactions",
-      "Clean and modern layout",
-    ],
+      features: [
+        "Responsive design for mobile and desktop",
+        "Interactive navigation menu",
+        "Hero section with call-to-action",
+        "Menu display section",
+        "Smooth scrolling and UI interactions",
+        "Clean and modern layout",
+      ],
 
-    challenges: [
-      "Achieving responsiveness across different screen sizes",
-      "Structuring clean and maintainable CSS",
-      "Implementing smooth UI interactions using vanilla JavaScript",
-    ],
+      challenges: [
+        "Achieving responsiveness across different screen sizes",
+        "Structuring clean and maintainable CSS",
+        "Implementing smooth UI interactions using vanilla JavaScript",
+      ],
 
-    results:
-      "Successfully built a responsive and visually appealing restaurant website that demonstrates strong frontend fundamentals and UI design skills.",
+      results:
+        "Successfully built a responsive and visually appealing restaurant website that demonstrates strong frontend fundamentals and UI design skills.",
+    },
   },
-},
+];
 
-  
-
-]
+export const categories = ["All", "Full Stack", "Frontend", "Backend"];
