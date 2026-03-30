@@ -13,10 +13,10 @@ export const PERSONAL_INFO = {
 };
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/alexjohnson",
-  linkedin: "https://linkedin.com/in/alexjohnson",
-  twitter: "https://twitter.com/alexjohnson",
-  dribbble: "https://dribbble.com/alexjohnson",
+  github: "https://github.com/IsmailMustopha",
+  linkedin: "https://linkedin.com/in",
+  instagram: "https://instagram.com/mustopha__1",
+  whatsapp: "https://wa.me/2348130335615",
 };
 
 export const STATS = [

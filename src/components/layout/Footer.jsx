@@ -5,9 +5,11 @@ import {
   Dribbble,
   Github,
   Heart,
+  Instagram,
   Linkedin,
   Mail,
   MapPin,
+  MessageCircle,
   Twitter,
 } from "lucide-react";
 import { scrollToSection } from "../../hooks/useScrollSpy";
@@ -15,8 +17,8 @@ import { scrollToSection } from "../../hooks/useScrollSpy";
 const socialIcons = {
   github: Github,
   linkedin: Linkedin,
-  twitter: Twitter,
-  dribbble: Dribbble,
+  instagram: Instagram, 
+  whatsapp: MessageCircle,
 };
 
 const Footer = () => {

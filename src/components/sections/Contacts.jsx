@@ -7,6 +7,8 @@ import {
   Twitter,
   Send,
   MessageSquare,
+  Instagram,
+  MessageCircle,
 } from "lucide-react";
 import { PERSONAL_INFO, SOCIAL_LINKS } from "./../../utils/constants";
 import FadeIn from "../animations/FadeIn";
@@ -54,7 +56,8 @@ const Contact = () => {
   const socialIcons = {
     github: Github,
     linkedin: Linkedin,
-    twitter: Twitter,
+    instagram: Instagram,
+    whatsapp: MessageCircle,
   };
 
   return (
