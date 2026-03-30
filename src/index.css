@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Urbanist", sans-serif;
+  --breakpoint-3xl: 1920px;
+  --color-primary: #8DFF69;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-display);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+  
+  /* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8DFF69, #6FE047);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ABFF8D, #5BC92E);
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6FE047 #0a0a0a;
+}
+
+/* Hide Scrollbar for Carousel */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;            /* Chrome, Safari, and Opera */
+}
+
+/* Keyframe Definitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation Utility Classes */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 8s linear infinite;
+}
+
+/* Line Clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+}
+
+/* --- SWIPER OVERRIDES (Globals/Main.css) --- */
+
+/* 1. PAGINATION (Bullets/Dots) */
+/* Container positioning */
+.swiper-pagination {
+  bottom: 20px !important; /* Move dots higher off the bottom */
+}
+
+/* Base dot styling */
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4) !important; /* Muted grey for inactive */
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Active dot styling (matches primary portfolio color) */
+.swiper-pagination-bullet-active {
+  background: #3B82F6 !important; /* <--- YOUR PRIMARY BRAND COLOR HERE (e.g., Tailwind Blue-500) */
+  width: 10px !important;
+  height: 10px !important;
+  transform: translateY(-1px); /* Subtle lift */
+}
+
+/* 2. NAVIGATION (Custom Arrows) */
+/* We defined custom arrow classes in the JSX, so we don't need to override 
+   Swiper's default classes (.swiper-button-prev, etc.), but we must hide them 
+   if they are inadvertently loaded. */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+/* Our custom buttons work with Tailwind classes defined directly in JSX. */
+
+
+/* --- BONUS: SLEEK DARK CUSTOM SCROLLBAR --- */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.3); /* Match primary color on hover */
+}
