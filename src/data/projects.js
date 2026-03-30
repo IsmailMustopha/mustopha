@@ -10,6 +10,8 @@ export const projects = [
       "/images/projects/project1_2.png",
       "/images/projects/project1_3.png",
       "/images/projects/project1_4.png",
+      "/images/projects/project1_5.png",
+      "/images/projects/project1_6.png",
     ],
     category: "Full Stack",
 
