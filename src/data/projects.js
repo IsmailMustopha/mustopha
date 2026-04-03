@@ -1,6 +1,66 @@
 export const projects = [
   {
     id: 1,
+    title: "AI-Powered Food Delivery Web App",
+    description:
+      "A full-stack food delivery platform with real-time tracking, AI chat, and seamless checkout experience.",
+    images: [
+      "/images/projects/project2.png",
+      "/images/projects/project2_2.png",
+      "/images/projects/project2_3.png",
+      "/images/projects/project2_4.png",
+    ],
+    category: "Full Stack",
+    technologies: [
+      "Next.js",
+      "MongoDB",
+      "Mongoose",
+      "NextAuth",
+      "Socket.io",
+      "Leaflet",
+      "Gemini API",
+      "Framer Motion",
+      "JWT",
+      "Redux Toolkit",
+      "React Query",
+      "Tailwind CSS",
+      "Cloudinary",
+      "Fluterwave",
+    ],
+    metrics: "Real-time system + AI integration",
+    demoUrl: "http://item7-go.vercel.app",
+    githubUrl: "https://github.com/IsmailMustopha/Item7_Go",
+    caseStudy: {
+      overview:
+        "A modern food delivery web app that allows users to shop, place orders, and track deliveries in real-time with AI-powered communication.",
+
+      problem:
+        "Most food platforms lack real-time tracking and direct communication between users and delivery agents, leading to poor user experience.",
+
+      solution:
+        "Built a full-stack system with live tracking, WebSocket updates, and AI chat to create a seamless and interactive delivery experience.",
+
+      features: [
+        "Product listing and cart system",
+        "Secure authentication with NextAuth",
+        "Real-time delivery tracking (Leaflet)",
+        "Live order updates using Socket.io",
+        "AI chat between user & delivery agent",
+        "Responsive UI with smooth animations",
+      ],
+
+      challenges: [
+        "Handling real-time updates across users",
+        "Synchronizing delivery location on the map",
+        "Managing complex app state",
+      ],
+
+      results:
+        "Delivered a scalable real-time application combining AI, maps, and modern UI/UX patterns.",
+    },
+  },
+  {
+    id: 2,
     title: "Full-Stack eCommerce Web App",
     description:
       "A scalable eCommerce platform with authentication, admin dashboard, payments, and rich product management.",
@@ -67,66 +127,7 @@ export const projects = [
         "Successfully built a scalable, production-grade eCommerce system with clean architecture, optimized performance, and real-world feature implementation.",
     },
   },
-  {
-    id: 2,
-    title: "AI-Powered Food Delivery Web App",
-    description:
-      "A full-stack food delivery platform with real-time tracking, AI chat, and seamless checkout experience.",
-    images: [
-      "/images/projects/project2.png",
-      "/images/projects/project2_2.png",
-      "/images/projects/project2_3.png",
-      "/images/projects/project2_4.png",
-    ],
-    category: "Full Stack",
-    technologies: [
-      "Next.js",
-      "MongoDB",
-      "Mongoose",
-      "NextAuth",
-      "Socket.io",
-      "Leaflet",
-      "Gemini API",
-      "Framer Motion",
-      "JWT",
-      "Redux Toolkit",
-      "React Query",
-      "Tailwind CSS",
-      "Cloudinary",
-      "Fluterwave",
-    ],
-    metrics: "Real-time system + AI integration",
-    demoUrl: "http://item7-go.vercel.app",
-    githubUrl: "https://github.com/IsmailMustopha/Item7_Go",
-    caseStudy: {
-      overview:
-        "A modern food delivery web app that allows users to shop, place orders, and track deliveries in real-time with AI-powered communication.",
 
-      problem:
-        "Most food platforms lack real-time tracking and direct communication between users and delivery agents, leading to poor user experience.",
-
-      solution:
-        "Built a full-stack system with live tracking, WebSocket updates, and AI chat to create a seamless and interactive delivery experience.",
-
-      features: [
-        "Product listing and cart system",
-        "Secure authentication with NextAuth",
-        "Real-time delivery tracking (Leaflet)",
-        "Live order updates using Socket.io",
-        "AI chat between user & delivery agent",
-        "Responsive UI with smooth animations",
-      ],
-
-      challenges: [
-        "Handling real-time updates across users",
-        "Synchronizing delivery location on the map",
-        "Managing complex app state",
-      ],
-
-      results:
-        "Delivered a scalable real-time application combining AI, maps, and modern UI/UX patterns.",
-    },
-  },
   {
     id: 3,
     title: "Full-Stack eCommerce Backend API",

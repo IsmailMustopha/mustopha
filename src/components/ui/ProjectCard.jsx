@@ -127,6 +127,28 @@ const ProjectCard = ({ project }) => {
               ))}
             </Swiper>
             <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent pointer-events-none z-10" />
+
+            {/* <div className="absolute bottom-4 right-4 flex items-center gap-3">
+              <button
+                // onClick={toggleModal}
+                className="p-2.5 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 hover:bg-primary/30 hover:border-primary transition-all duration-300 hover:scale-110 cursor-pointer"
+                title="View Details"
+              >
+                <ExternalLink className="w-4 h-4 text-white" />
+              </button>
+
+              {githubUrl && (
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2.5 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 hover:bg-primary/30 hover:border-primary transition-all duration-300 hover:scale-110"
+                  title="GitHub Repository"
+                >
+                  <Github className="w-4 h-4 text-white" />
+                </a>
+              )}
+            </div> */}
           </div>
 
           {/* CONTENT SECTION */}
